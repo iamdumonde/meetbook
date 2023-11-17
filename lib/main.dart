@@ -78,7 +78,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
               labelType: NavigationRailLabelType.selected,
-              destinations: const [NavigationRailDestination()],
+              destinations: const [
+                NavigationRailDestination(
+                  icon: Icon(Icons.home),
+                  label: Text('Home'),
+                ),
+                NavigationRailDestination(
+                  icon: Icon(Icons.dashboard),
+                  label: Text('Dashboard'),
+                )
+              ],
             )
           ],
         ));
